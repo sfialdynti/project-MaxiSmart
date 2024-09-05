@@ -17,13 +17,4 @@ class Kategori extends Model
         return $this->hasMany(Buku::class, 'kategoris_id', 'id');
     }
 
-    // public static function boot()
-    // {
-    //     parent::boot();
-
-    //     static::creating(function ($kategori)
-    //     {
-    //         $kategori->slug = Str::slug($kategori->nama_kategori);
-    //     });
-    // }
 }

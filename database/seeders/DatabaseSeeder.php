@@ -44,31 +44,5 @@ class DatabaseSeeder extends Seeder
 
         // User::factory(15)->create();
 
-        // Kategori::create([
-        //     'nama_kategori' => 'Fiksi'
-        // ]);
-
-        // Kategori::create([
-        //     'nama_kategori' => 'Pengetahuan'
-        // ]);
-
-        // Buku::create([
-        //     'kategoris_id' => 2,
-        //     'nama_buku' => 'Ips',
-        //     'deskripsi_buku' => 'Buku ini adalah',
-        //     'harga' => '100000',
-        //     'jumlah_buku' => 50,
-        //     'foto_buku' => ''
-        // ]);
-
-        // Buku::create([
-        //     'kategoris_id' => 1,
-        //     'nama_buku' => 'Filosofi Tras',
-        //     'deskripsi_buku' => 'Buku ini adalah',
-        //     'harga' => '150000',
-        //     'jumlah_buku' => 50,
-        //     'foto_buku' => ''
-        // ]);
-
     }
 }

@@ -68,9 +68,6 @@ class PembayaranController extends Controller
     public function psn()
     {
         $data['pesanan'] = Pembayaran::with('keranjang.bukus')->get();
-
-        // $data['pesanan'] = Pembayaran::all();
-        // $data['detail'] = DetailPembayaran::all();
         return view('pesanansaya', $data);
     }
 }

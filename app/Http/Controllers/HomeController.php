@@ -12,12 +12,6 @@ use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
-    // public function show(){
-    //     $kategori = Kategori::with('bukus')->get();
-
-    //     return view('home', ['kategoris' => $kategori]);
-    // }
-
     public function show(Request $request)
     {
         $data['user'] = Auth::user();
@@ -104,11 +98,5 @@ class HomeController extends Controller
         return redirect('home');
 
     }
-    
-    // public function detailktgr(Request $request)
-    // {
-    //     $data['kategori'] = Kategori::find($request->id)->with;
-    //     $data['buku'] = Kategori::with('bukus')->get();
-    // }
 
 }

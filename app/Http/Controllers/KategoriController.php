@@ -8,14 +8,6 @@ use Illuminate\Support\Facades\Session;
 
 class KategoriController extends Controller
 {
-    // public function ktgrpage($slug)
-    // {
-    //     $kategori = Kategori::where('slug', $slug)->firstOrFail();
-    //     $bukus = $kategori->bukus;
-    //     return view('kategori.show', compact('kategori', 'bukus'));
-    // }
-
-
     public function showktgr()
     {
         $data['kategori'] = Kategori::orderby('nama_kategori', 'asc')->get();

@@ -46,7 +46,8 @@ Route::get('/register', [LoginController::class, 'register']);
 Route::post('/add/reg', [LoginController::class, 'addreg']);
 
 Route::middleware('statuslogin')->group(function () {
-    //dashboard 
+    
+//dashboard 
 Route::get('/dashboard', [DashboardController::class, 'adm']);
 // Route::get('/dashboard', [DashboardController::class, 'index']);
 
